@@ -27,6 +27,8 @@ export function NavLink({
           ${
             isActive
               ? "text-amber-400 font-medium bg-navy-800"
+              : isMobile
+              ? "text-black hover:text-amber-300 hover:bg-navy-800"
               : "text-white hover:text-amber-300 hover:bg-navy-800"
           }
         `}

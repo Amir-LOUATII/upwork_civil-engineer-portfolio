@@ -10,7 +10,7 @@ export const links: Link[] = [
   {
     id: nanoid(),
     href: "#home",
-    text: "home",
+    text: "introduction",
   },
   {
     id: nanoid(),
@@ -19,17 +19,22 @@ export const links: Link[] = [
   },
   {
     id: nanoid(),
-    href: "#skills",
-    text: "skills",
+    href: "#contact",
+    text: "contact",
   },
   {
     id: nanoid(),
     href: "#projects",
-    text: "projects",
+    text: "port",
   },
   {
     id: nanoid(),
-    href: "#experiences",
-    text: "experiences",
+    href: "#privacy",
+    text: "privacy",
+  },
+  {
+    id: nanoid(),
+    href: "#term",
+    text: "term of",
   },
 ];

@@ -39,7 +39,7 @@ export function MobileMenu({
 
       {isOpen && (
         <div
-          className="absolute top-full left-1/2 transform -translate-x-1/2 bg-navy-900 w-full lg:hidden flex flex-col items-center py-4 rounded-b-xl shadow-lg"
+          className="absolute top-full left-1/2 transform -translate-x-1/2 w-full lg:hidden flex flex-col items-center py-4 rounded-b-xl shadow-lg bg-white z-50 text-black"
           ref={mobileMenuRef}
         >
           {links.map((link) => (
