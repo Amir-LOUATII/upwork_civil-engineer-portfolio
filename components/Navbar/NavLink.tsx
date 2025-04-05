@@ -26,10 +26,10 @@ export function NavLink({
           capitalize text-lg tracking-wide transition duration-300 py-2 px-4 w-full text-center mx-1 block
           ${
             isActive
-              ? "text-amber-400 font-medium bg-navy-800"
+              ? "text-amber-800 font-medium bg-navy-800"
               : isMobile
-              ? "text-black hover:text-amber-300 hover:bg-navy-800"
-              : "text-white hover:text-amber-300 hover:bg-navy-800"
+              ? "text-black hover:text-amber-800 hover:bg-navy-800"
+              : "text-white hover:text-amber-800 hover:bg-navy-800"
           }
         `}
       >
