@@ -1,6 +1,6 @@
-import React from "react";
 import ImageBackgroundSection from "../common/ImageBackgroundSection";
 import approach from "@/assets/approach.png";
+
 const values = [
   {
     title: "Collaborative Approach",
@@ -21,30 +21,37 @@ const values = [
     keep you engaged and informed at every step.`,
   },
 ];
+
 export default function ApproachSection() {
   return (
-    <section className="section">
-      <header className="container mx-auto ">
-        <h3 className="text-black text-3xl py-3 font-semibold">Approach</h3>
+    <section className="section" aria-labelledby="approach-heading">
+      <header className="container mx-auto px-4">
+        <h2
+          id="approach-heading"
+          className="text-3xl font-semibold text-black py-3"
+        >
+          Our Approach
+        </h2>
       </header>
+
       <ImageBackgroundSection
         imageSrc={approach}
-        imageAlt="approach image"
+        imageAlt="Team collaborating on a project"
         overlayColor="bg-black"
         overlayOpacity="opacity-40"
       >
-        <div className="container mx-auto py-3 gap-4 h-full flex justify-center items-center ">
-          <div>
-            {" "}
+        <div className="container mx-auto px-4 py-8 md:py-12">
+          <div className="max-w-4xl mx-auto space-y-8 md:space-y-12">
             {values.map((item, index) => (
               <div
                 key={index}
-                className="flex  gap-4 md:gap-8 items-center mb-8 p-4 justify-start flex-wrap "
+                className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8"
+                data-aos="fade-up"
               >
-                <h3 className="text-2xl font-bold  mb-2 md:mb-4 text-white max-w-1/6">
+                <h3 className="text-2xl md:text-3xl font-bold text-white">
                   {item.title}
                 </h3>
-                <p className="text-sm leading-relaxed text-white whitespace-pre-line">
+                <p className="text-white text-base md:text-lg leading-relaxed">
                   {item.description}
                 </p>
               </div>
