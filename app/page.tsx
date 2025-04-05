@@ -1,3 +1,4 @@
+import AnalysisSection from "@/components/analysis/AnalysisSection";
 import ApproachSection from "@/components/approach/ApproachSection";
 import ExperienceSection from "@/components/experiences/ExperienceSection";
 import Hero from "@/components/hero/Hero";
@@ -12,6 +13,7 @@ export default function Home() {
       <ExperienceSection />
       <ApproachSection />
       <ProcessSection />
+      <AnalysisSection />
     </>
   );
 }
