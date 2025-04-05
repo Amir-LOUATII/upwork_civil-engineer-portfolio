@@ -4,11 +4,13 @@ import ProjectCard from "./ProjectCard";
 
 export default function ExperienceSection() {
   return (
-    <section className="w-full  px-4 py-12 bg-white text-black">
+    <section className="section text-black">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-6 lg:gap-12 mb-12">
           <div>
-            <h1 className="text-3xl font-bold mb-8">Experience.</h1>
+            <h1 className="text-3xl font-bold mb-8 text-gray-950">
+              Experience
+            </h1>
 
             {/* Project Cards */}
             {/* Project Card 1 */}
