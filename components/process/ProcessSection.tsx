@@ -1,14 +1,12 @@
+import SectionTitle from "../common/SectionTitle";
 import Arrow from "./Arrow";
 import ProcessStep from "./ProcessStep";
 
 export default function ProcessSection() {
   return (
-    <section className="w-full py-16 px-4 bg-white">
+    <section className="section">
+      <SectionTitle text="Process" />
       <div className="container mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-black">
-          Process
-        </h2>
-
         <div className="flex flex-col items-center justify-center gap-4 md:hidden">
           <ProcessStep label="Analysis" />
           <Arrow className="rotate-90" />

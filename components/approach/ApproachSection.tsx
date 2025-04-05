@@ -23,7 +23,7 @@ const values = [
 ];
 export default function ApproachSection() {
   return (
-    <section className="w-full px-6 py-12 bg-white">
+    <section className="section">
       <header className="container mx-auto ">
         <h3 className="text-black text-3xl py-3 font-semibold">Approach</h3>
       </header>
