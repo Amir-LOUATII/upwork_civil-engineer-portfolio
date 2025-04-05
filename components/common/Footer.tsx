@@ -3,7 +3,7 @@ import { Facebook, Twitter, Instagram } from "lucide-react";
 export default function Footer() {
   return (
     <footer className="bg-black text-white py-10 px-6">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-10">
         {/* Left Section */}
         <div>
           <h1 className="font-bold text-lg">
@@ -23,7 +23,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className=" flex justify-between items-start">
+        <div className=" flex justify-between items-start ">
           {" "}
           {/* Middle Links */}
           <div className="text-sm space-y-2">
