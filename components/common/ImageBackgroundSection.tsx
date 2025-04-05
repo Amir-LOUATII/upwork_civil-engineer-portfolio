@@ -21,7 +21,7 @@ export default function ImageBackgroundSection({
   imageSrc,
   imageAlt,
   className = "",
-  height = "h-screen",
+  height = "min-h-screen",
   width = "w-full",
   overlayColor = "bg-black",
   overlayOpacity = "opacity-50",
@@ -31,18 +31,18 @@ export default function ImageBackgroundSection({
 }: ImageBackgroundSectionProps) {
   return (
     <section className={twMerge(`relative ${width} ${height}`, className)}>
-      <div className="absolute inset-0 w-full h-full">
+      <div className="absolute inset-0 w-full h-full rounded-lg">
         <Image
           src={imageSrc || "/placeholder.svg"}
           fill
           alt={imageAlt}
           priority={priority}
-          className={`object-${objectFit}`}
+          className={`object-${objectFit} rounded-lg`}
         />
       </div>
 
       <div
-        className={`absolute inset-0 w-full h-full ${overlayColor} ${overlayOpacity}`}
+        className={`absolute inset-0 w-full h-full rounded-lg ${overlayColor} ${overlayOpacity}`}
       />
 
       <div
